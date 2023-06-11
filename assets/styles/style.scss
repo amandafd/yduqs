@@ -26,27 +26,37 @@ header {
     width: 25.8%;
     align-items: center;
     justify-content: space-between;
+
+    img {
+        height: 1.25rem;
+    }
+
+    div {
+        cursor: pointer;
+    }
 }
 
 .icon-burger {
-    cursor: pointer;
-}
+    span {
+        background-color: $primary-azul-claro;
+        display: block;
+        width: 1.7rem;
+        height: 0.2rem;
+        margin: 0.3rem auto;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    &.active span {
+        &:nth-child(2) {
+            opacity: 0;
+        }
 
-.icon-burger__bar {
-    background-color: $primary-azul-claro;
-    display: block;
-    width: 1.7rem;
-    height: 0.2rem;
-    margin: 0.3rem auto;
-    transition: all 0.3s ease-in-out;
-}
+        &:nth-child(1) {
+            transform: translateY(0.5rem) rotate(45deg); 
+        }
 
-.icon-burger.active .icon-burger__bar:nth-child(2) {
-    opacity: 0;
-}
-.icon-burger.active .icon-burger__bar:nth-child(1) {
-    transform: translateY(0.5rem) rotate(45deg);
-}
-.icon-burger.active .icon-burger__bar:nth-child(3) {
-    transform: translateY(-0.5rem) rotate(-45deg);
+        &:nth-child(3) {
+            transform: translateY(-0.5rem) rotate(-45deg);
+        }
+    }    
 }

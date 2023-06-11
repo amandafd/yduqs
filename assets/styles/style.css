@@ -22,12 +22,14 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-
-.icon-burger {
+.notification-burger img {
+  height: 1.25rem;
+}
+.notification-burger div {
   cursor: pointer;
 }
 
-.icon-burger__bar {
+.icon-burger span {
   background-color: #00ADBB;
   display: block;
   width: 1.7rem;
@@ -35,15 +37,12 @@ header {
   margin: 0.3rem auto;
   transition: all 0.3s ease-in-out;
 }
-
-.icon-burger.active .icon-burger__bar:nth-child(2) {
+.icon-burger.active span:nth-child(2) {
   opacity: 0;
 }
-
-.icon-burger.active .icon-burger__bar:nth-child(1) {
+.icon-burger.active span:nth-child(1) {
   transform: translateY(0.5rem) rotate(45deg);
 }
-
-.icon-burger.active .icon-burger__bar:nth-child(3) {
+.icon-burger.active span:nth-child(3) {
   transform: translateY(-0.5rem) rotate(-45deg);
 }/*# sourceMappingURL=style.css.map */
