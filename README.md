@@ -49,6 +49,7 @@
 
 <h3 id="licoes-aprendidadas">Lições Aprendidas</h3>
 <ul>As lições aprendidas, assim como os conhecimentos reforçados, serão atualizadas no decorrer da solução:
+  <li>Metodologia mobile first</li>
   <li>Uso de SASS para desenvolver folhas de estilo de maneira otimizada;</li>
 </ul> 
 
