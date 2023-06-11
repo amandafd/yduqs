@@ -1,4 +1,4 @@
-<h1 align="center">Yduqs - solução</h1>
+<h1 align="center">YDUQS - Solução</h1>
 
 
 <!--TODO: adicionar badge SASS e Bootstrap-->
@@ -49,6 +49,7 @@
 
 <h3 id="lessons-learned">Lições Aprendidas</h3>
 <ul>As lições aprendidas, assim como os conhecimentos reforçados, serão atualizadas no decorrer da solução:
+  <li>Uso de SASS para desenvolver folhas de estilo de maneira otimizada;</li>
 </ul> 
 
 <h2 id="autora" align="left">Autora</h2>
