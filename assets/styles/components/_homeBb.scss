@@ -1,5 +1,9 @@
 @import "../abstract/variables";
 
+img {
+    max-width: 100%;
+}
+
 .home-bb {
     background-color: $primary-color;
 
@@ -13,30 +17,30 @@
         .banner-2 {
             @include flex-column;
             height: 100%;
-        }
-        
-        .box-info {
-            @include flex-column;
-            height: 12.875rem;
-            align-items: center;
-            text-align: center;
 
-            h2 {
-                color: $light-color;
-                span {
-                    color: $secondary-color;
-                    font-weight: $fw-light;
-                }
-            }
+            .box-info {
+                @include flex-column;
+                height: 12.875rem;
+                align-items: center;
+                text-align: center;
     
-            button {
-                color: $light-color;
-                background-color: transparent;
-                padding: 0.5rem 1rem;
-                border: 1px solid $light-color;
-                border-radius: 0.125rem;
-                font-weight: $fw-bold;
-                font-size: 1.125rem;
+                h2 {
+                    color: $light-color;
+                    span {
+                        color: $secondary-color;
+                        font-weight: $fw-light;
+                    }
+                }
+        
+                button {
+                    color: $light-color;
+                    background-color: transparent;
+                    padding: 0.5rem 1rem;
+                    border: 1px solid $light-color;
+                    border-radius: 0.125rem;
+                    font-weight: $fw-bold;
+                    font-size: 1.125rem;
+                }
             }
         }
 
@@ -82,8 +86,8 @@
     }
 }
 
-@media (min-width: 280px) {
-    .home-bb{
+@media (min-width: 280px) and (max-width:396px) {
+    .home-bb {
         .atalhos {
             display: flex;
             flex-direction: column;

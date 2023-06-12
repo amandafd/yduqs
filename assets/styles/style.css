@@ -47,6 +47,10 @@ header {
   transform: translateY(-0.5rem) rotate(-45deg);
 }
 
+img {
+  max-width: 100%;
+}
+
 .home-bb {
   background-color: #12284C;
 }
@@ -65,7 +69,7 @@ header {
   justify-content: space-between;
   height: 100%;
 }
-.home-bb .banner .box-info {
+.home-bb .banner .banner-2 .box-info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -73,14 +77,14 @@ header {
   align-items: center;
   text-align: center;
 }
-.home-bb .banner .box-info h2 {
+.home-bb .banner .banner-2 .box-info h2 {
   color: #fff;
 }
-.home-bb .banner .box-info h2 span {
+.home-bb .banner .banner-2 .box-info h2 span {
   color: #00ADBB;
   font-weight: 300;
 }
-.home-bb .banner .box-info button {
+.home-bb .banner .banner-2 .box-info button {
   color: #fff;
   background-color: transparent;
   padding: 0.5rem 1rem;
@@ -124,7 +128,7 @@ header {
   max-width: 3.75rem;
 }
 
-@media (min-width: 280px) {
+@media (min-width: 280px) and (max-width: 396px) {
   .home-bb .atalhos {
     display: flex;
     flex-direction: column;
