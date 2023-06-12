@@ -12,6 +12,7 @@
          display: flex;
          align-items: center;
          padding: 1.5rem 0 2.5rem 0;
+
          h5 {
             padding: 0 2rem;
          }
@@ -19,7 +20,7 @@
 
       .resultados {
          display: grid;
-         grid-template-columns: 1fr 0fr;
+         grid-template-columns: repeat(2, 1fr);
          gap: 1rem;
 
          div {
@@ -75,9 +76,10 @@
    }
 }
 
-@media (min-width: 280px) and (max-width:396px) {
+@media (min-width: 280px) and (max-width: 396px) {
    .home-investidores {
       padding: 1.5rem;
+
       .central  {
          .resultados {
             display: flex;
@@ -91,7 +93,7 @@
    .home-investidores {
       .central {
          .resultados {
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
          }
       }
    }
@@ -105,4 +107,27 @@
          }
       }
    }
+}
+
+@media(min-width: 950px) {
+   .home-investidores{
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+
+      .central {
+         .resultados {
+            gap: 1rem
+         }
+      }
+ 
+      .calendario {
+         padding: 0 0;
+      }
+   }
+}
+
+@media (min-width: 1510px) {
+   
 }

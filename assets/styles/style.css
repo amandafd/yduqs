@@ -8,6 +8,10 @@ html {
   font-size: 16px;
 }
 
+main {
+  overflow-y: hidden;
+}
+
 header {
   background-color: #12284C;
   display: flex;
@@ -15,37 +19,37 @@ header {
   justify-content: space-between;
   padding: 1.5rem 1rem;
 }
-
-.cotacao-acess {
+header .cotacao-acess {
   display: flex;
+  width: 100%;
   gap: 2rem;
+  justify-content: space-evenly;
 }
-
-.acess {
+header .cotacao-acess .acess {
   display: none;
 }
-
-.cotacao {
+header .cotacao-acess .cotacao {
   display: none;
 }
-
-.header-icons {
+header .header-icons {
   display: flex;
-  width: 25.8%;
+  width: 10rem;
   align-items: center;
   justify-content: space-between;
 }
-.header-icons img {
+header .header-icons img {
   height: 1.25rem;
 }
-.header-icons .eua {
+header .header-icons .eua {
   display: none;
 }
-.header-icons div {
+header .header-icons .search {
+  display: none;
+}
+header .header-icons div {
   cursor: pointer;
 }
-
-.icon-burger span {
+header .header-icons .icon-burger span {
   background-color: #00ADBB;
   display: block;
   width: 1.7rem;
@@ -53,39 +57,47 @@ header {
   margin: 0.3rem auto;
   transition: all 0.3s ease-in-out;
 }
-.icon-burger.active span:nth-child(2) {
+header .header-icons .icon-burger.active span:nth-child(2) {
   opacity: 0;
 }
-.icon-burger.active span:nth-child(1) {
+header .header-icons .icon-burger.active span:nth-child(1) {
   transform: translateY(0.5rem) rotate(45deg);
 }
-.icon-burger.active span:nth-child(3) {
+header .header-icons .icon-burger.active span:nth-child(3) {
   transform: translateY(-0.5rem) rotate(-45deg);
 }
-
 @media (min-width: 620px) {
-  .cotacao {
+  header {
+    padding: 1.5rem 2rem;
+  }
+  header .cotacao-acess .cotacao {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
     min-width: 19rem;
   }
-  .cotacao p {
+  header .cotacao-acess p {
     color: #fff;
     font-weight: 700;
   }
-  .cotacao p span {
+  header .cotacao-acess p span {
     color: #00ADBB;
   }
-  .header-icons .eua {
+  header .header-icons {
+    width: 36%;
+  }
+  header .header-icons .eua {
     display: block;
   }
-  .header-icons .search {
+  header .header-icons .search {
     display: block;
   }
 }
 @media (min-width: 950px) {
-  .acess {
+  header .header-icons {
+    width: 17rem;
+  }
+  header .cotacao-acess .acess {
     color: #fff;
     display: flex;
     flex-direction: row;
@@ -94,6 +106,7 @@ header {
     align-items: center;
   }
 }
+
 img {
   max-width: 100%;
 }
@@ -105,7 +118,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: url(./../images/banner-vr.png) top;
+  background: url(./../images/banner-vr.png) top no-repeat;
   background-size: cover;
   height: 27.75rem;
   padding: 5.5rem 0 0 1rem;
@@ -160,6 +173,7 @@ img {
   grid-template-columns: 1fr 0fr;
   gap: 1.5rem;
   padding: 5rem 1rem;
+  justify-items: center;
 }
 .home-bb .atalhos div {
   display: flex;
@@ -168,6 +182,7 @@ img {
   width: 10.75rem;
   height: 8rem;
   align-items: center;
+  text-align: center;
   justify-content: center;
   gap: 0.75rem;
   border-radius: 0.25rem;
@@ -190,28 +205,37 @@ img {
 }
 @media (min-width: 620px) {
   .home-bb {
-    /*.banner {
-        .visual-components {
-            .bullet-select {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                align-items: center;
-                gap: 0.9rem;
-                top: -179%;
-                left: 89%;
-            }
+    /*.visual-components {
+      .bullet-select {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.9rem;
+        top: -179%;
+        left: 89%;
+      }
 
-            .arrows {
-                display: inline-flex;
-                justify-content: space-between;
-                width: 4rem;
-            }
-        }
+      .arrows {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 4rem;
+      }
     }*/
+    /*}*/
   }
   .home-bb .atalhos {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 980px) {
+  .home-bb .atalhos {
+    display: flex;
+    padding: 5rem 3rem;
+    justify-content: space-between;
+  }
+  .home-bb .atalhos div {
+    width: 9.5rem;
   }
 }
 .home-institucional {
@@ -221,6 +245,7 @@ img {
   display: flex;
   overflow-x: scroll;
   height: 28.125rem;
+  justify-content: space-between;
 }
 .home-institucional .cards .quem-somos {
   background: linear-gradient(0deg, rgba(18, 40, 76, 0.3), rgba(18, 40, 76, 0.3)), url("./../images/quem-somos.png") no-repeat top;
@@ -322,7 +347,7 @@ img {
 }
 .home-investidores .central .resultados {
   display: grid;
-  grid-template-columns: 1fr 0fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 .home-investidores .central .resultados div {
@@ -382,12 +407,26 @@ img {
 }
 @media (min-width: 620px) {
   .home-investidores .central .resultados {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 740px) {
   .home-investidores .central .resultados {
     gap: 4rem;
+  }
+}
+@media (min-width: 950px) {
+  .home-investidores {
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .home-investidores .central .resultados {
+    gap: 1rem;
+  }
+  .home-investidores .calendario {
+    padding: 0 0;
   }
 }
 footer {
@@ -421,4 +460,16 @@ footer div {
 }
 footer .separador {
   padding: 0.5rem 0.5rem;
+}
+@media (min-width: 620px) {
+  footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+  }
+}
+@media (min-width: 950px) {
+  footer {
+    grid-template-columns: auto auto auto auto;
+  }
 }/*# sourceMappingURL=style.css.map */

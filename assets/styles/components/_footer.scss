@@ -34,4 +34,16 @@ footer {
     .separador {
         padding: 0.5rem 0.5rem;
     }
+
+    @media(min-width: 620px) {
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: center;
+    }
+
+    @media (min-width: 950px) {
+        grid-template-columns: auto auto auto auto;
+
+    }
 }
+

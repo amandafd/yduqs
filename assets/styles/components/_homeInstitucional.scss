@@ -26,13 +26,14 @@
         display: flex;
         overflow-x: scroll;
         height: 28.125rem;
+        justify-content: space-between;
 
         .quem-somos {
-            @include div-institucional("./../images/quem-somos.png")
+            @include div-institucional("./../images/quem-somos.png");
         }
     
         .unidades {
-            @include div-institucional(("./../images/banner-vr.png"))
+            @include div-institucional(("./../images/banner-vr.png"));
         }
     
         .estrategia {
