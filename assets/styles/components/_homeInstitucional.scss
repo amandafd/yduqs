@@ -1,0 +1,57 @@
+@import "../abstract/variables";
+
+@mixin div-institucional($url-da-imagem) {
+    background: linear-gradient(0deg, rgba(18, 40, 76, 0.3), rgba(18, 40, 76, 0.3)), url($url-da-imagem) no-repeat top;
+    background-size: cover;
+    min-width: 21.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem 0rem 2.375rem 2rem;
+
+    h5 {
+        color: $light-color;
+        font-weight: $fw-regular;
+    }
+
+    img {
+        max-width: 4rem;
+    }
+}
+
+.home-institucional {
+    width: 100%;
+
+    .cards {
+        display: flex;
+        overflow-x: scroll;
+        height: 28.125rem;
+
+        .quem-somos {
+            @include div-institucional("./../images/quem-somos.png")
+        }
+    
+        .unidades {
+            @include div-institucional(("./../images/banner-vr.png"))
+        }
+    
+        .estrategia {
+            @include div-institucional("./../images/estrategia.png");
+        }
+    
+        .impacto {
+            @include div-institucional("./../images/impacto.png");
+        }
+    }
+ 
+    .visual-components {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+
+        .arrow {
+            padding: 1.25rem;
+        }
+    }
+}

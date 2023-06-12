@@ -8,26 +8,6 @@ html {
   font-size: 16px;
 }
 
-h1 {
-  font-size: 1.8rem;
-}
-
-h2 {
-  font-size: 2.25rem;
-}
-
-h3 {
-  font-size: 1.8rem;
-}
-
-h4 {
-  font-size: 1.625rem;
-}
-
-h5 {
-  font-size: 1.5rem;
-}
-
 header {
   background-color: #12284C;
   display: flex;
@@ -71,21 +51,27 @@ header {
   background-color: #12284C;
 }
 .home-bb .banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: url(./../images/banner-vr.png) top;
   background-size: cover;
   height: 27.75rem;
   padding: 5.5rem 0 0 1rem;
+}
+.home-bb .banner .banner-2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 }
 .home-bb .banner .box-info {
-  height: 12.875rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 12.875rem;
   align-items: center;
   text-align: center;
-  justify-content: space-between;
 }
 .home-bb .banner .box-info h2 {
   color: #fff;
@@ -113,4 +99,231 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+}
+.home-bb hr {
+  border: 0.25rem solid #00ADBB;
+}
+.home-bb .atalhos {
+  display: grid;
+  grid-template-columns: 1fr 0fr;
+  gap: 1.5rem;
+  padding: 5rem 1rem;
+}
+.home-bb .atalhos div {
+  display: flex;
+  flex-direction: column;
+  background-color: #00ADBB;
+  width: 10.75rem;
+  height: 8rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  border-radius: 0.25rem;
+}
+.home-bb .atalhos div img {
+  max-width: 3.75rem;
+}
+
+@media (min-width: 280px) {
+  .home-bb .atalhos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: inherit;
+    padding: 5rem 0;
+  }
+}
+.home-institucional {
+  width: 100%;
+}
+.home-institucional .cards {
+  display: flex;
+  overflow-x: scroll;
+  height: 28.125rem;
+}
+.home-institucional .cards .quem-somos {
+  background: linear-gradient(0deg, rgba(18, 40, 76, 0.3), rgba(18, 40, 76, 0.3)), url("./../images/quem-somos.png") no-repeat top;
+  background-size: cover;
+  min-width: 21.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem 0rem 2.375rem 2rem;
+}
+.home-institucional .cards .quem-somos h5 {
+  color: #fff;
+  font-weight: 400;
+}
+.home-institucional .cards .quem-somos img {
+  max-width: 4rem;
+}
+.home-institucional .cards .unidades {
+  background: linear-gradient(0deg, rgba(18, 40, 76, 0.3), rgba(18, 40, 76, 0.3)), url("./../images/banner-vr.png") no-repeat top;
+  background-size: cover;
+  min-width: 21.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem 0rem 2.375rem 2rem;
+}
+.home-institucional .cards .unidades h5 {
+  color: #fff;
+  font-weight: 400;
+}
+.home-institucional .cards .unidades img {
+  max-width: 4rem;
+}
+.home-institucional .cards .estrategia {
+  background: linear-gradient(0deg, rgba(18, 40, 76, 0.3), rgba(18, 40, 76, 0.3)), url("./../images/estrategia.png") no-repeat top;
+  background-size: cover;
+  min-width: 21.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem 0rem 2.375rem 2rem;
+}
+.home-institucional .cards .estrategia h5 {
+  color: #fff;
+  font-weight: 400;
+}
+.home-institucional .cards .estrategia img {
+  max-width: 4rem;
+}
+.home-institucional .cards .impacto {
+  background: linear-gradient(0deg, rgba(18, 40, 76, 0.3), rgba(18, 40, 76, 0.3)), url("./../images/impacto.png") no-repeat top;
+  background-size: cover;
+  min-width: 21.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem 0rem 2.375rem 2rem;
+}
+.home-institucional .cards .impacto h5 {
+  color: #fff;
+  font-weight: 400;
+}
+.home-institucional .cards .impacto img {
+  max-width: 4rem;
+}
+.home-institucional .visual-components {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.home-institucional .visual-components .arrow {
+  padding: 1.25rem;
+}
+
+.home-investidores h3 {
+  color: #12284C;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+.home-investidores h5 {
+  color: #12284C;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.home-investidores .central {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-investidores .central .t21 {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0 2.5rem 0;
+}
+.home-investidores .central .t21 h5 {
+  padding: 0 2rem;
+}
+.home-investidores .central .resultados {
+  display: grid;
+  grid-template-columns: 1fr 0fr;
+  gap: 1rem;
+}
+.home-investidores .central .resultados div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 10.8rem;
+}
+.home-investidores .central .resultados div img {
+  width: 3.2rem;
+}
+.home-investidores .calendario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+.home-investidores .calendario h6 {
+  color: #00ADBB;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.home-investidores a {
+  color: #12284C;
+  padding: 2.75rem 0 4.5rem;
+}
+.home-investidores .eventos {
+  padding-top: 2.5rem;
+}
+.home-investidores .eventos .texto {
+  color: #262626;
+}
+.home-investidores .eventos .hora {
+  color: #808080;
+  font-size: 0.875rem;
+}
+.home-investidores .eventos .evento {
+  padding: 1rem 0 0.5rem 0;
+}
+.home-investidores .eventos .evento img {
+  padding-right: 1rem;
+}
+.home-investidores .eventos hr {
+  border: 1px solid #e6e6e6;
+}
+
+@media (max-width: 360px) {
+  .home-investidores {
+    padding: 1.5rem;
+  }
+  .home-investidores .central .resultados {
+    display: flex;
+    flex-direction: column;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #12284C;
+  align-items: center;
+  padding: 1rem;
+  min-height: 9.5rem;
+}
+footer .copyright {
+  color: #00ADBB;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+footer p {
+  color: #fff;
+  font-weight: 300;
+}
+footer a {
+  color: #00ADBB;
+  font-weight: 700;
+}
+footer div {
+  display: flex;
+}
+footer .separador {
+  padding: 0 0.5rem;
 }/*# sourceMappingURL=style.css.map */

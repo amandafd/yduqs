@@ -1,0 +1,33 @@
+@import "../abstract/variables";
+
+footer {
+    @include flex-column;
+    background-color: $primary-color;
+    align-items: center;
+    padding: 1rem;
+    min-height: 9.5rem;
+
+    .copyright {
+        color: $secondary-color;
+        font-size: 0.875rem;
+        font-weight: $fw-bold;
+    }
+    
+    p {
+        color: $light-color;
+        font-weight: $fw-light;
+    }
+
+    a {
+        color: $secondary-color;
+        font-weight: $fw-bold;
+    }
+
+    div {
+        display: flex;
+    }
+
+    .separador {
+        padding: 0 0.5rem;
+    }
+}

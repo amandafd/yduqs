@@ -1,7 +1,67 @@
 $primary-color: #12284C;
 $secondary-color: #00ADBB;
+$gray: #808080;
+$gray-2: #262626;
+$gray-3: #e6e6e6;
 $light-color: #fff;
 
 $font: 'Inter', sans-serif;
 $fw-bold: 700;
+$fw-regular: 400;
 $fw-light: 300;
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@mixin h1($color, $fw) {
+    h1 {
+        color: $color;
+        font-weight: $fw;
+        font-size: 1.8rem;
+    }
+    
+}
+
+@mixin h2($color, $fw) {
+    h2{
+        color: $color;
+        font-weight: $fw;
+        font-size: 2.25rem;
+    }
+    
+}
+
+@mixin h3($color, $fw) {
+    h3 {
+        color: $color;
+        font-weight: $fw;
+        font-size: 1.8rem;
+    }
+}
+
+@mixin h4($color, $fw) {
+    h4 {
+        color: $color;
+        font-weight: $fw;
+        font-size: 1.625rem;
+    }
+}
+
+@mixin h5($color, $fw) {
+    h5 {
+        color: $color;
+        font-weight: $fw;
+        font-size: 1.5rem;
+    }
+}
+
+@mixin h6($color, $fw) {
+    h6 {
+        color: $color;
+        font-weight: $fw;
+        font-size: 1rem;
+    }
+}

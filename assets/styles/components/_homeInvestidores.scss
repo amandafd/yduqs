@@ -1,0 +1,88 @@
+@import "../abstract/variables";
+
+.home-investidores {
+   @include h3($primary-color, $fw-light);
+   @include h5($primary-color, $fw-regular);
+
+   .central {
+      @include flex-column;
+      align-items: center;
+
+      .t21 {
+         display: flex;
+         align-items: center;
+         padding: 1.5rem 0 2.5rem 0;
+         h5 {
+            padding: 0 2rem;
+         }
+      }
+
+      .resultados {
+         display: grid;
+         grid-template-columns: 1fr 0fr;
+         gap: 1rem;
+
+         div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 10.8rem;
+
+            img {
+               width: 3.2rem;
+            }
+         }
+      }
+   }
+
+   .calendario {
+      @include flex-column;
+      align-items: center;
+      padding: 0rem 1rem;
+
+      @include h6 ($secondary-color, $fw-regular);
+   }
+
+   a {
+      color: $primary-color;
+      padding: 2.75rem 0 4.5rem;
+   }
+
+   .eventos {
+      padding-top: 2.5rem;
+
+      .texto {
+         color: $gray-2;
+      }
+
+      .hora {
+         color: $gray;
+         font-size: 0.875rem;
+      }
+
+      .evento {
+         padding: 1rem 0 0.5rem 0;
+
+         img {
+            padding-right: 1rem;
+         } 
+      }
+
+      hr {
+         border: 1px solid $gray-3;
+      }
+   }
+}
+
+@media(max-width: 360px) {
+   .home-investidores {
+      padding: 1.5rem;
+      .central  {
+         .resultados {
+            display: flex;
+            flex-direction: column;
+         }
+      }
+   }
+}
