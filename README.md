@@ -30,9 +30,9 @@
 <h2 id="visao-geral">Visaõ Geral</h2>
 
 <h3 id="o-desafio">O Desafio</h3>
-<p>Solução do desafio técnico proposto pela B3.</p> 
+<p>Solução do desafio técnico proposto.</p> 
 
-<h4>TESTE CRIAÇÃO HTML/CSS</h4>
+<h4>TESTE CRIAÇÃO HTML/CSS(instruções)</h4>
 <p>Construção de soluções front-end para os layouts buscando manter fidelidade à estrutura de código inicial criada;</p>
 <p>Utilizar de recursos do SASS para gerar menos linhas de código e criar/manter biblioteca de propriedades;</p>
 <p>O Layout do site está no software de prototipação Figma, com arquivo em anexo.</p>
