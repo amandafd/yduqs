@@ -25,9 +25,13 @@ footer {
 
     div {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        min-width: 11rem;
     }
 
     .separador {
-        padding: 0 0.5rem;
+        padding: 0.5rem 0.5rem;
     }
 }

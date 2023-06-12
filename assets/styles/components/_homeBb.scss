@@ -23,6 +23,7 @@ img {
                 height: 12.875rem;
                 align-items: center;
                 text-align: center;
+                text-shadow: 1rem 1rem 1rem $primary-color;
     
                 h2 {
                     color: $light-color;
@@ -84,6 +85,10 @@ img {
             }
         }
     }
+
+    .arrows {
+        display: none;
+    }
 }
 
 @media (min-width: 280px) and (max-width:396px) {
@@ -96,5 +101,35 @@ img {
             padding: 5rem 0;
         }
     }
+    
+}
+
+@media (min-width: 620px) {
+    .home-bb {
+        /*.banner {
+            .visual-components {
+                .bullet-select {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    gap: 0.9rem;
+                    top: -179%;
+                    left: 89%;
+                }
+
+                .arrows {
+                    display: inline-flex;
+                    justify-content: space-between;
+                    width: 4rem;
+                }
+            }
+        }*/
+
+        .atalhos {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
     
 }

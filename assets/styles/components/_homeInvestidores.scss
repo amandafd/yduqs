@@ -75,13 +75,33 @@
    }
 }
 
-@media (max-width: 360px) {
+@media (min-width: 280px) and (max-width:396px) {
    .home-investidores {
       padding: 1.5rem;
       .central  {
          .resultados {
             display: flex;
             flex-direction: column;
+         }
+      }
+   }
+}
+
+@media (min-width: 620px) {
+   .home-investidores {
+      .central {
+         .resultados {
+            grid-template-columns: 1fr 1fr 1fr;
+         }
+      }
+   }
+}
+
+@media (min-width: 740px) {
+   .home-investidores {
+      .central {
+         .resultados {
+            gap: 4rem;
          }
       }
    }

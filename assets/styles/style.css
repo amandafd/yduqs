@@ -16,16 +16,32 @@ header {
   padding: 1.5rem 1rem;
 }
 
-.notification-burger {
+.cotacao-acess {
+  display: flex;
+  gap: 2rem;
+}
+
+.acess {
+  display: none;
+}
+
+.cotacao {
+  display: none;
+}
+
+.header-icons {
   display: flex;
   width: 25.8%;
   align-items: center;
   justify-content: space-between;
 }
-.notification-burger img {
+.header-icons img {
   height: 1.25rem;
 }
-.notification-burger div {
+.header-icons .eua {
+  display: none;
+}
+.header-icons div {
   cursor: pointer;
 }
 
@@ -47,6 +63,37 @@ header {
   transform: translateY(-0.5rem) rotate(-45deg);
 }
 
+@media (min-width: 620px) {
+  .cotacao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 19rem;
+  }
+  .cotacao p {
+    color: #fff;
+    font-weight: 700;
+  }
+  .cotacao p span {
+    color: #00ADBB;
+  }
+  .header-icons .eua {
+    display: block;
+  }
+  .header-icons .search {
+    display: block;
+  }
+}
+@media (min-width: 950px) {
+  .acess {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    min-width: 12rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 img {
   max-width: 100%;
 }
@@ -76,6 +123,7 @@ img {
   height: 12.875rem;
   align-items: center;
   text-align: center;
+  text-shadow: 1rem 1rem 1rem #12284C;
 }
 .home-bb .banner .banner-2 .box-info h2 {
   color: #fff;
@@ -127,6 +175,9 @@ img {
 .home-bb .atalhos div img {
   max-width: 3.75rem;
 }
+.home-bb .arrows {
+  display: none;
+}
 
 @media (min-width: 280px) and (max-width: 396px) {
   .home-bb .atalhos {
@@ -135,6 +186,32 @@ img {
     align-items: center;
     padding: inherit;
     padding: 5rem 0;
+  }
+}
+@media (min-width: 620px) {
+  .home-bb {
+    /*.banner {
+        .visual-components {
+            .bullet-select {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 0.9rem;
+                top: -179%;
+                left: 89%;
+            }
+
+            .arrows {
+                display: inline-flex;
+                justify-content: space-between;
+                width: 4rem;
+            }
+        }
+    }*/
+  }
+  .home-bb .atalhos {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 .home-institucional {
@@ -294,13 +371,23 @@ img {
   border: 1px solid #e6e6e6;
 }
 
-@media (max-width: 360px) {
+@media (min-width: 280px) and (max-width: 396px) {
   .home-investidores {
     padding: 1.5rem;
   }
   .home-investidores .central .resultados {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (min-width: 620px) {
+  .home-investidores .central .resultados {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 740px) {
+  .home-investidores .central .resultados {
+    gap: 4rem;
   }
 }
 footer {
@@ -327,7 +414,11 @@ footer a {
 }
 footer div {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  min-width: 11rem;
 }
 footer .separador {
-  padding: 0 0.5rem;
+  padding: 0.5rem 0.5rem;
 }/*# sourceMappingURL=style.css.map */

@@ -7,8 +7,20 @@ header {
     justify-content: space-between;
     padding: 1.5rem 1rem;
 }
+.cotacao-acess{
+    display: flex;
+    gap: 2rem
+}
 
-.notification-burger {
+.acess {
+    display: none;
+}
+
+.cotacao {
+    display: none;//por enquanto
+}
+
+.header-icons {
     display: flex;
     width: 25.8%;
     align-items: center;
@@ -16,6 +28,11 @@ header {
 
     img {
         height: 1.25rem;
+        
+    }
+
+    .eua {
+        display: none;//por enquanto
     }
 
     div {
@@ -48,4 +65,39 @@ header {
     }    
 }
 
+@media (min-width: 620px) {
+    .cotacao {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 19rem;
+        p {
+            color: $light-color;
+            font-weight: $fw-bold;
+            span {
+                color: $secondary-color;
+            }
+        }
+    }
+    .header-icons { //por enquanto
+        .eua {
+            display: block;
+        }
+
+        .search {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 950px) {
+    .acess {
+        color: $light-color;
+        display: flex;
+        flex-direction: row;
+        min-width: 12rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
 
