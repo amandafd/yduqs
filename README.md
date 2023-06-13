@@ -44,6 +44,10 @@
 <h3 id="etapas">Etapas</h3>
 <ul>As etapas de desenvolvimento da aplicação foram:
   <li>Planejamento inicial da arquitetura da solução</li>
+  <li>Estudo do protótipo e compreensão da proposta;</li>
+  <li>Desenvolvimento dos elementos em HTML;</li>
+  <li>Estilização utilizando o SASS;</li>
+  <li>Refatoração de melhoria do código para otimização e facilitar a manutenção;</li>
 </ul>
 <p>Apesar de as etapas estarem descritas seguindo o fluxo planejado, alguns itens sofreram modificações e melhorias de maneira não linear ao longo do processo. Como a aplicação ainda está em desenvolvimento, as informações contidas nessas sessão serão constantemente atualizadas;</p>
 
@@ -51,7 +55,18 @@
 <ul>As lições aprendidas, assim como os conhecimentos reforçados, serão atualizadas no decorrer da solução:
   <li>Metodologia mobile first</li>
   <li>Uso de SASS para desenvolver folhas de estilo de maneira otimizada;</li>
+  <li>Noções de desenvolvimento de componentes web, utilizados em outra bibliotecas e frameworks;</li>
 </ul> 
+
+<ul>Melhorias futuras a serem implementadas:
+  <li>Refatoração do código, otimizando ainda mais o uso de funções de variaveis para diminuir a quantidade de linhas em folhas de estilo e facilitar a manutenção;</li>
+  <li>Melhorar componentes visuais para se adequar a proposta(banners, imagens, etc ainda precisam de melhoria);</li>
+  <li>Adicionar scroll automatico para carrosel de componentes;</li>
+  <li>Substituir ícones "imagens" por ícones com a tag i. Eles facilitam a manutenção de código e a qualidade da aplicação;</li>
+  <li>Melhoria e aplicação de boas práticas para acessibilidade e usabilidade da aplicação;</li>
+  <li>Trabalhar na responsividade da tela "ESG" para telas maiores que 620px;</li>
+  <li>Adicionar outras funcionalidades, tais como links, estilizações de hover, etc;</li>
+</ul>
 
 <h2 id="autora" align="left">Autora</h2>
 <img align="left" src="https://avatars.githubusercontent.com/u/104245596?s=400&u=22dddd54d435db2df3c8f6e91c881be3cdc31170&v=4" width=115>

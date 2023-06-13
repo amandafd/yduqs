@@ -15,7 +15,6 @@ main {
 header {
   background-color: #12284C;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 1rem;
@@ -34,7 +33,6 @@ header .cotacao-acess .cotacao {
 }
 header .header-icons {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 10rem;
@@ -643,6 +641,7 @@ footer .separador {
 .esg-section .esg-div .compromissos .imgs-painels {
   width: 95%;
   position: relative;
+  overflow-x: hidden;
 }
 .esg-section .esg-div .compromissos .imgs-painels hr {
   position: absolute;

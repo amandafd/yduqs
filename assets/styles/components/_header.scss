@@ -2,7 +2,7 @@
 
 header {
   background-color: $primary-color;
-  @include flex-column-justify-align-i(space-between, center);
+  @include flex-justify-align-i(space-between, center);
   padding: 1.5rem 1rem;
 
   .cotacao-acess {
@@ -20,7 +20,7 @@ header {
   }
 
   .header-icons {
-    @include flex-column-justify-align-i(space-between, center);
+    @include flex-justify-align-i(space-between, center);
     width: 10rem;
 
     img {
