@@ -1,0 +1,99 @@
+@import "../abstract/variables";
+
+.central-central {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+        padding-bottom: 2.5rem;
+    }
+
+    .filtrar {
+        font-size: 0.875rem;
+        text-align: center;
+        padding-bottom: 1.5rem;
+
+        label {
+            color: $gray-5;
+        }
+
+        select {
+            color: $gray-4;
+            width: 6.625rem;
+            height: 1.75rem;
+            padding-left: 0.5rem;
+        }
+    }
+
+    .tabela {
+        overflow-x: scroll;
+        width: 100%;
+
+        table {
+            border-collapse: collapse;
+
+            thead {
+                background-color: $primary-color;
+                color: $light-color;
+                font-weight: $fw-bold;
+                font-size: 1.18rem;
+                height: 2rem;
+    
+                th {
+                    border: none;
+                    padding: 0 0.5rem;
+
+                    &:first-child {
+                        padding-right: 1rem;
+                        text-align: left;
+                    }
+
+                    &:not(:first-child) {
+                        padding: 0 2rem;
+                    }
+                }
+            }
+
+            tbody {
+                td {
+                    padding: 1rem 0;
+                    border-bottom: 1px solid $gray-6;
+                }
+            }
+
+            td {
+                white-space: nowrap;
+
+                &:first-child {
+                    padding-right: 1rem;
+                }
+
+                &:not(:first-child) {
+                    padding: 0 2rem;
+                    text-align: center;
+                }
+            }
+            
+            
+        }
+    }
+    
+    .clique-aqui {
+        display: inline-flex;
+        align-items: flex-start;
+        padding-top: 2rem;
+
+        img {
+            padding-right: 0.5rem;
+        }
+    }
+
+}
+
+@media (min-width: 620px) {
+    .central-central {
+        display: flex;
+        align-items: center;
+    }
+}

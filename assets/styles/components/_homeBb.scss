@@ -1,11 +1,12 @@
 @import "../abstract/variables";
 
-img {
-  max-width: 100%;
-}
+
 
 .home-bb {
   background-color: $primary-color;
+  img {
+    max-width: 100%;
+  }
 
   .banner {
     @include flex-column;
@@ -108,8 +109,6 @@ img {
 
 @media (min-width: 620px) {
   .home-bb {
-
-
       /*.visual-components {
         .bullet-select {
           display: flex;

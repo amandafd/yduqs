@@ -1,0 +1,42 @@
+@import "../abstract/variables";
+
+.container-banner {
+  position: relative;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  img {
+    width: 92%;
+    z-index: 2;
+    border-radius: 0.25rem 0 0 0.25rem;
+  }
+}
+
+.banner::before {
+  content: "";
+  background-color: $primary-color;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background-color: $primary-color;
+}
+
+.textura-bullet {
+  width: 58%;
+}
+
+@media (min-width: 620px) {
+  .banner {
+    justify-content: flex-end;
+  }
+
+  .textura-bullet {
+    width: 30%;
+  }
+}

@@ -1,7 +1,49 @@
 @import "./abstract/base";
 @import "./abstract/variables";
-@import "./components/header";   
+
+@import "./components/header";
+
 @import "./components/homeBb";  
 @import "./components/homeInstitucional";
 @import "./components/homeInvestidores";
+
+@import "./components/containerBanner";
+@import "./components/centralCentral";
+
 @import "./components/footer";
+
+.bread-scrum {
+    font-size: 0.875rem;
+    color: $gray-4;
+    font-weight: $fw-regular;
+    padding: 1.5rem 1rem 0.5rem 1rem;
+}
+
+.title {
+    color: $primary-color;
+    font-size: 1.8rem;
+    font-weight: $fw-regular;
+}
+
+section {
+    padding: 0 1rem;
+}
+
+.compartilhar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 8.5rem;
+    padding: 0 1rem;
+    
+    div {
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+    }
+
+    hr {
+        border: 1px solid $gray-3;
+        margin-bottom: 1rem;
+    }
+}   
