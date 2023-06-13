@@ -62,10 +62,13 @@
   <li>Refatoração do código, otimizando ainda mais o uso de funções de variaveis para diminuir a quantidade de linhas em folhas de estilo e facilitar a manutenção;</li>
   <li>Melhorar componentes visuais para se adequar a proposta(banners, imagens, etc ainda precisam de melhoria);</li>
   <li>Adicionar scroll automatico para carrosel de componentes;</li>
+  <li>Desenvolver menu retratil;</li>
   <li>Substituir ícones "imagens" por ícones com a tag i. Eles facilitam a manutenção de código e a qualidade da aplicação;</li>
   <li>Melhoria e aplicação de boas práticas para acessibilidade e usabilidade da aplicação;</li>
   <li>Trabalhar na responsividade da tela "ESG" para telas maiores que 620px;</li>
   <li>Adicionar outras funcionalidades, tais como links, estilizações de hover, etc;</li>
+  <li>Melhoria na semântica da aplicação(uso de tags, etc);</li>
+  <li>Depois de adicionada a lógica de navegação da aplicação, realizar deploy;</li>
 </ul>
 
 <h2 id="autora" align="left">Autora</h2>
