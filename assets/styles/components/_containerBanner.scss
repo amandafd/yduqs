@@ -5,9 +5,7 @@
 }
 
 .banner {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  @include flex-justify-align-i(center, flex-start);
 
   img {
     width: 92%;

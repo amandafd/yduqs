@@ -1,9 +1,8 @@
 @import "../abstract/variables";
 
 footer {
-    @include flex-column;
+    @include flex-column-justify-align-i(space-between, center);
     background-color: $primary-color;
-    align-items: center;
     padding: 1rem;
     min-height: 9.5rem;
 
@@ -24,9 +23,7 @@ footer {
     }
 
     div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-justify-align-i(space-between, center);
         text-align: center;
         min-width: 11rem;
     }
@@ -36,8 +33,7 @@ footer {
     }
 
     @media(min-width: 620px) {
-        display: grid;
-        grid-template-columns: auto auto;
+        @include grid-template-columns(auto auto);
         text-align: center;
         justify-content: space-around;
     }

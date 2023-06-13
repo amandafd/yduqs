@@ -1,0 +1,39 @@
+@import "../abstract/variables";
+
+.esg-section {
+    .esg-div {
+        .intro {
+            @include flex-column-padding-gap(0 0 4.5rem 0, 4rem); 
+
+            .intro-text {
+                @include flex-column-padding-gap(0 1.53rem, 1.5rem);
+                color: $gray-2;
+                line-height: 1.5rem;
+            }
+
+            .intro-milhoes {
+                @include flex-column-align-i(center);
+                text-align: center;
+                gap: 1.5rem;
+
+                div {
+                    p {
+                        &:first-child {
+                            color: $primary-color;
+                            font-size: 1.8175rem;
+                            font-weight: $fw-bold;
+                            span {
+                                color: $secondary-color;
+                                font-size: 3.5rem;
+                            }
+                        }
+                        &:not(:first-child) {
+                            color: $gray-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

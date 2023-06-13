@@ -1,0 +1,70 @@
+@import "../abstract/variables";
+
+.esg-section {
+    padding: 0 0;
+
+    .esg-div {
+        .compromissos {
+            background-color: $primary-color;
+            padding: 4rem 0;
+
+            h4 {
+                font-size: 1.625rem;
+                color: $secondary-color;
+                font-weight: $fw-bold;
+                padding: 0 0 2rem 1.53rem;
+            }
+
+            .imgs-painels {
+                width: 95%;
+                position: relative;
+
+                hr {
+                    position: absolute;
+                    width: 100%;
+                    bottom: 3px;
+                    margin: 0 1rem;
+                    border: 1px solid $secondary-color;
+                }
+            }
+
+            h5 {
+                color: $secondary-color;
+                padding: 2.75rem 0 1.5rem 1.5rem;
+                font-size: 1.5rem;
+                font-weight: $fw-regular;
+            }
+
+            .ambiental {
+                .text-block {
+                    padding-bottom: 2rem;
+                } 
+            }
+
+            .social {
+                .text-block {
+                    padding-bottom: 3.5rem;
+                }
+
+                .div-img-hr {
+                    padding-bottom: 1.75rem;
+                }
+            }
+
+            .div-img-hr {
+                @include flex-column-padding(0 1rem);
+                hr {
+                    width: 100%;
+                    bottom: 3px;
+                    border: 1px solid $secondary-color;
+                }
+            }
+
+            .text-block {
+                color: $light-color;
+                @include flex-column-padding(0 1.53rem);
+                gap: 1.5rem;
+            }
+        }
+    }
+}

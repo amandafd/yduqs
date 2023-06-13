@@ -1,28 +1,25 @@
 @import "../abstract/variables";
 
-
-
 .home-bb {
   background-color: $primary-color;
   img {
     max-width: 100%;
   }
 
-  .banner {
-    @include flex-column;
+  .home-banner {
+    @include flex-column-justify(space-between);
     background: url(./../images/banner-vr.png) top no-repeat;
     background-size: cover;
     height: 27.75rem;
     padding: 5.5rem 0 0 1rem;
 
-    .banner-2 {
-      @include flex-column;
+    .home-banner-2 {
+      @include flex-column-justify(space-between);
       height: 100%;
 
       .box-info {
-        @include flex-column;
+        @include flex-column-justify-align-i(space-between, center);
         height: 12.875rem;
-        align-items: center;
         text-align: center;
         text-shadow: 1rem 1rem 1rem $primary-color;
 
@@ -66,21 +63,17 @@
   }
 
   .atalhos {
-    display: grid;
-    grid-template-columns: 1fr 0fr;
+    @include grid-template-columns(1fr 0fr);
     gap: 1.5rem;
     padding: 5rem 1rem;
     justify-items: center;
 
     div {
-      display: flex;
-      flex-direction: column;
+      @include flex-column-justify-align-i(center, center);
       background-color: $secondary-color;
       width: 10.75rem;
       height: 8rem;
-      align-items: center;
       text-align: center;
-      justify-content: center;
       gap: 0.75rem;
       border-radius: 0.25rem;
 
@@ -98,9 +91,7 @@
 @media (min-width: 280px) and (max-width: 396px) {
   .home-bb {
     .atalhos {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flex-column-align-i(center);
       padding: inherit;
       padding: 5rem 0;
     }
@@ -111,10 +102,8 @@
   .home-bb {
       /*.visual-components {
         .bullet-select {
-          display: flex;
-          flex-direction: column;
+          @include flex-column-align(center);
           flex-wrap: wrap;
-          align-items: center;
           gap: 0.9rem;
           top: -179%;
           left: 89%;
@@ -137,9 +126,8 @@
 @media (min-width: 980px) {
   .home-bb {
     .atalhos {
-      display: flex;
+      @include flex-justify(space-between);
       padding: 5rem 3rem;
-      justify-content: space-between;
       div {
         width: 9.5rem;
       }

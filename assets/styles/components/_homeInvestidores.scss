@@ -1,16 +1,21 @@
 @import "../abstract/variables";
 
 .home-investidores {
-   @include h3($primary-color, $fw-light);
-   @include h5($primary-color, $fw-regular);
+   h3 {
+      color: $primary-color;
+      font-size: 1.8rem;
+  }
+
+   h5 {
+      color: $primary-color;
+      font-size: 1.5rem;
+   }
 
    .central {
-      @include flex-column;
-      align-items: center;
+      @include flex-column-justify-align-i(space-between, center);
 
       .t21 {
-         display: flex;
-         align-items: center;
+         @include flex-align-i(center);
          padding: 1.5rem 0 2.5rem 0;
 
          h5 {
@@ -19,14 +24,11 @@
       }
 
       .resultados {
-         display: grid;
-         grid-template-columns: repeat(2, 1fr);
+         @include grid-template-columns(repeat(2, 1fr));
          gap: 1rem;
 
          div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex-column-align-i(center);
             text-align: center;
             width: 10.8rem;
 
@@ -38,10 +40,12 @@
    }
 
    .calendario {
-      @include flex-column;
-      align-items: center;
+      @include flex-column-justify-align-i(space-between, center);
 
-      @include h6 ($secondary-color, $fw-regular);
+      h6 {
+         color: $primary-color;
+         font-size: 1rem;
+     }
    }
 
    a {
@@ -81,8 +85,7 @@
 
       .central  {
          .resultados {
-            display: flex;
-            flex-direction: column;
+            @include flex-column;
          }
       }
    }
@@ -110,9 +113,8 @@
 
 @media(min-width: 950px) {
    .home-investidores{
+      @include grid-template-columns( 1fr 1fr);
       padding: 0 1rem;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
       gap: 2rem;
 
       .central {
@@ -125,8 +127,4 @@
          padding: 0 0;
       }
    }
-}
-
-@media (min-width: 1510px) {
-   
 }

@@ -4,9 +4,7 @@
     background: linear-gradient(0deg, rgba(18, 40, 76, 0.3), rgba(18, 40, 76, 0.3)), url($url-da-imagem) no-repeat top;
     background-size: cover;
     min-width: 21.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex-column-justify(space-between);
     padding: 4rem 0rem 2.375rem 2rem;
 
     h5 {
@@ -23,10 +21,9 @@
     width: 100%;
 
     .cards {
-        display: flex;
+        @include flex-justify(space-between);
         overflow-x: scroll;
         height: 28.125rem;
-        justify-content: space-between;
 
         .quem-somos {
             @include div-institucional("./../images/quem-somos.png");
@@ -46,9 +43,7 @@
     }
  
     .visual-components {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-justify-align-i(center, center);
         padding: 1rem;
 
         .arrow {

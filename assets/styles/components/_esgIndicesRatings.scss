@@ -1,0 +1,16 @@
+@import "../abstract/variables";
+
+.esg-section {
+    .esg-div {
+        h4 {
+            font-size: 1.625rem;
+            color: $secondary-color;
+            font-weight: $fw-bold;
+            padding: 0 0 2rem 1.53rem;
+        }
+
+        .indices-ratings {
+            padding: 4rem 1.5rem 0 1.5rem;
+        }
+    }
+}

@@ -2,42 +2,37 @@
 
 header {
   background-color: $primary-color;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flex-column-justify-align-i(space-between, center);
   padding: 1.5rem 1rem;
 
   .cotacao-acess {
-    display: flex;
+    @include flex-justify(space-evenly);
     width: 100%;
     gap: 2rem;
-    justify-content: space-evenly;
 
     .acess {
       display: none;
     }
 
     .cotacao {
-      display: none; // por enquanto
+      display: none;
     }
   }
 
   .header-icons {
-    display: flex;
+    @include flex-column-justify-align-i(space-between, center);
     width: 10rem;
-    align-items: center;
-    justify-content: space-between;
 
     img {
       height: 1.25rem;
     }
 
     .eua {
-      display: none; // por enquanto
+      display: none;
     }
 
     .search {
-      display: none; // por enquanto
+      display: none;
     }
 
     div {
@@ -112,11 +107,9 @@ header {
     .cotacao-acess {
       .acess {
         color: $light-color;
-        display: flex;
+        @include flex-justify-align-i(space-between, center);
         flex-direction: row;
         min-width: 12rem;
-        justify-content: space-between;
-        align-items: center;
       }
     }
   }
