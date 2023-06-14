@@ -33,12 +33,11 @@
         }
 
         button {
-          @include text-color-size($light-color, 1.25rem);
+          @include text-color-size-weight($light-color, 1.25rem, $fw-bold);
           background-color: transparent;
           padding: 0.5rem 1rem;
           border: 1px solid $light-color;
           border-radius: 0.125rem;
-          font-weight: $fw-bold;
         }
       }
     }
@@ -68,10 +67,9 @@
     justify-items: center;
 
     div {
-      @include flex-column-justify-align-i(center, center);
       background-color: $secondary-color;
-      width: 10.75rem;
-      height: 8rem;
+      @include flex-column-justify-align-i(center, center);
+      @include size-w-h(10.75rem, 8rem);
       text-align: center;
       gap: 0.75rem;
       border-radius: 0.25rem;

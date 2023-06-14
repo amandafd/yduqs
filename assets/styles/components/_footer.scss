@@ -7,8 +7,7 @@ footer {
     min-height: 9.5rem;
 
     .copyright {
-        @include text-color-size($secondary-color, 0.875rem);
-        font-weight: $fw-bold;
+        @include text-color-size-weight($secondary-color, 0.875rem, $fw-bold);
     }
     
     p {

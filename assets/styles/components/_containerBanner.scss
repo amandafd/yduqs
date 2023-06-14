@@ -17,12 +17,10 @@
 .banner::before {
   content: "";
   background-color: $primary-color;
+  @include size-w-h(100%, 70%);
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 70%;
-  background-color: $primary-color;
 }
 
 .textura-bullet {

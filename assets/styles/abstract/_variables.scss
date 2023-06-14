@@ -37,9 +37,8 @@ $fw-light: 300;
     padding: $padding;
 }
 
-@mixin flex-column-padding-gap($padding, $gap) {
+@mixin flex-column-gap($gap) {
     @include flex-column;
-    padding: $padding;
     gap: $gap;
 }
 
@@ -78,8 +77,19 @@ $fw-light: 300;
     font-size: $fs;
 }
 
+@mixin text-color-size-weight($color, $fs, $fw) {
+    @include text-color-size($color, $fs);
+    font-weight: $fw;
+}
+
 @mixin h4 {
-    @include text-color-size($secondary-color, 1.625rem);
-    font-weight: $fw-bold;
+    @include text-color-size-weight($secondary-color, 1.625rem, $fw-bold);
     padding: 0 0 2rem 1.53rem;
+}
+
+//SIZE
+
+@mixin size-w-h($w, $h) {
+    width: $w;
+    height: $h;
 }

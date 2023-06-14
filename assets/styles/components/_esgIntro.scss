@@ -1,12 +1,17 @@
 @import "../abstract/variables";
 
 .esg-section {
+    .title {
+        padding: 0 1rem 2.5rem;
+    }
+    
     .esg-div {
         .intro {
-            @include flex-column-padding-gap(0 0 4.5rem 0, 4rem); 
+            @include flex-column-gap(4rem); 
+            padding: 0 1rem 4.5rem 01rem;
 
             .intro-text {
-                @include flex-column-padding-gap(0 1.53rem, 1.5rem);
+                @include flex-column-gap(1.5rem);
                 color: $gray-2;
                 line-height: 1.5rem;
             }
@@ -19,8 +24,7 @@
                 div {
                     p {
                         &:first-child {
-                            @include text-color-size($primary-color, 1.8175rem);
-                            font-weight: $fw-bold;
+                            @include text-color-size-weight($primary-color, 1.8175rem, $fw-bold);
                             span {
                                 @include text-color-size($secondary-color, 3.5rem);
                             }

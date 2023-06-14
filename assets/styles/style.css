@@ -102,7 +102,6 @@ header .header-icons .icon-burger.active span:nth-child(3) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
     min-width: 12rem;
   }
 }
@@ -125,12 +124,11 @@ header .header-icons .icon-burger.active span:nth-child(3) {
 .banner::before {
   content: "";
   background-color: #12284C;
+  width: 100%;
+  height: 70%;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 70%;
-  background-color: #12284C;
 }
 
 .textura-bullet {
@@ -230,12 +228,12 @@ footer .separador {
 }
 .home-bb .home-banner .home-banner-2 .box-info button {
   color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
   background-color: transparent;
   padding: 0.5rem 1rem;
   border: 1px solid #fff;
   border-radius: 0.125rem;
-  font-weight: 700;
-  font-size: 1.125rem;
 }
 .home-bb .home-banner .visual-components {
   position: relative;
@@ -259,11 +257,11 @@ footer .separador {
   justify-items: center;
 }
 .home-bb .atalhos div {
+  background-color: #00ADBB;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #00ADBB;
   width: 10.75rem;
   height: 8rem;
   text-align: center;
@@ -339,7 +337,6 @@ footer .separador {
 }
 .home-institucional .cards .quem-somos h5 {
   color: #fff;
-  font-weight: 400;
 }
 .home-institucional .cards .quem-somos img {
   max-width: 4rem;
@@ -355,7 +352,6 @@ footer .separador {
 }
 .home-institucional .cards .unidades h5 {
   color: #fff;
-  font-weight: 400;
 }
 .home-institucional .cards .unidades img {
   max-width: 4rem;
@@ -371,7 +367,6 @@ footer .separador {
 }
 .home-institucional .cards .estrategia h5 {
   color: #fff;
-  font-weight: 400;
 }
 .home-institucional .cards .estrategia img {
   max-width: 4rem;
@@ -387,7 +382,6 @@ footer .separador {
 }
 .home-institucional .cards .impacto h5 {
   color: #fff;
-  font-weight: 400;
 }
 .home-institucional .cards .impacto img {
   max-width: 4rem;
@@ -519,10 +513,10 @@ footer .separador {
   border-collapse: collapse;
 }
 .central-section .tabela table thead {
-  background-color: #12284C;
   color: #fff;
-  font-weight: 700;
   font-size: 1.18rem;
+  font-weight: 700;
+  background-color: #12284C;
   height: 2rem;
 }
 .central-section .tabela table thead th {
@@ -591,16 +585,18 @@ footer .separador {
     align-items: center;
   }
 }
+.esg-section .title {
+  padding: 0 1rem 2.5rem;
+}
 .esg-section .esg-div .intro {
   display: flex;
   flex-direction: column;
-  padding: 0 0 4.5rem 0;
   gap: 4rem;
+  padding: 0 1rem 4.5rem 1rem;
 }
 .esg-section .esg-div .intro .intro-text {
   display: flex;
   flex-direction: column;
-  padding: 0 1.53rem;
   gap: 1.5rem;
   color: #262626;
   line-height: 1.5rem;
@@ -633,8 +629,8 @@ footer .separador {
   padding: 4rem 0;
 }
 .esg-section .esg-div .compromissos h4 {
-  font-size: 1.625rem;
   color: #00ADBB;
+  font-size: 1.625rem;
   font-weight: 700;
   padding: 0 0 2rem 1.53rem;
 }
@@ -652,9 +648,8 @@ footer .separador {
 }
 .esg-section .esg-div .compromissos h5 {
   color: #00ADBB;
-  padding: 2.75rem 0 1.5rem 1.5rem;
   font-size: 1.5rem;
-  font-weight: 400;
+  padding: 2.75rem 0 1.5rem 1.5rem;
 }
 .esg-section .esg-div .compromissos .ambiental .text-block {
   padding-bottom: 2rem;
@@ -684,8 +679,8 @@ footer .separador {
 }
 
 .esg-section .esg-div h4 {
-  font-size: 1.625rem;
   color: #00ADBB;
+  font-size: 1.625rem;
   font-weight: 700;
   padding: 0 0 2rem 1.53rem;
 }
@@ -696,7 +691,6 @@ footer .separador {
 .bread-scrum {
   font-size: 0.875rem;
   color: #999;
-  font-weight: 400;
   padding: 1.5rem 1rem 0.5rem 1rem;
 }
 

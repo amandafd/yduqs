@@ -43,8 +43,7 @@ header {
       span {
         background-color: $secondary-color;
         display: block;
-        width: 1.7rem;
-        height: 0.2rem;
+        @include size-w-h(1.7rem, 0.2rem);
         margin: 0.3rem auto;
         transition: all 0.3s ease-in-out;
       }

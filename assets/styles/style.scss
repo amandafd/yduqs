@@ -18,14 +18,11 @@
 .bread-scrum {
     font-size: 0.875rem;
     color: $gray-4;
-    font-weight: $fw-regular;
     padding: 1.5rem 1rem 0.5rem 1rem;
 }
 
 .title {
-    color: $primary-color;
-    font-size: 1.8rem;
-    font-weight: $fw-regular;
+    @include text-color-size-weight($primary-color, 1.8rem, $fw-regular);
 }
 
 section {
@@ -46,8 +43,7 @@ section {
     
         select {
             color: $gray-4;
-            width: 6.625rem;
-            height: 1.75rem;
+            @include size-w-h(6.625rem, 1.75rem);
             padding-left: 0.5rem;
         }
     }
