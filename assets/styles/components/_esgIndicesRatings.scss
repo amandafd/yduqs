@@ -3,10 +3,7 @@
 .esg-section {
     .esg-div {
         h4 {
-            font-size: 1.625rem;
-            color: $secondary-color;
-            font-weight: $fw-bold;
-            padding: 0 0 2rem 1.53rem;
+            @include h4;
         }
 
         .indices-ratings {

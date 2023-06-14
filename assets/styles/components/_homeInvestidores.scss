@@ -2,13 +2,11 @@
 
 .home-investidores {
    h3 {
-      color: $primary-color;
-      font-size: 1.8rem;
+      @include text-color-size($primary-color, 1.8rem);
   }
 
    h5 {
-      color: $primary-color;
-      font-size: 1.5rem;
+      @include text-color-size($primary-color, 1.5rem);
    }
 
    .central {
@@ -43,8 +41,7 @@
       @include flex-column-justify-align-i(space-between, center);
 
       h6 {
-         color: $primary-color;
-         font-size: 1rem;
+         @include text-color-size($primary-color, 1rem);
      }
    }
 
@@ -61,8 +58,7 @@
       }
 
       .hora {
-         color: $gray;
-         font-size: 0.875rem;
+         @include text-color-size($gray, 0.875rem);
       }
 
       .evento {

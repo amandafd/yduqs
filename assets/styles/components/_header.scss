@@ -108,7 +108,6 @@ header {
       .acess {
         color: $light-color;
         @include flex-justify-align-i(space-between, center);
-        flex-direction: row;
         min-width: 12rem;
       }
     }

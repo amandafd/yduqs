@@ -33,13 +33,12 @@
         }
 
         button {
-          color: $light-color;
+          @include text-color-size($light-color, 1.25rem);
           background-color: transparent;
           padding: 0.5rem 1rem;
           border: 1px solid $light-color;
           border-radius: 0.125rem;
           font-weight: $fw-bold;
-          font-size: 1.125rem;
         }
       }
     }

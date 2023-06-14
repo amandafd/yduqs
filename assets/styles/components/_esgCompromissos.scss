@@ -9,10 +9,7 @@
             padding: 4rem 0;
 
             h4 {
-                font-size: 1.625rem;
-                color: $secondary-color;
-                font-weight: $fw-bold;
-                padding: 0 0 2rem 1.53rem;
+                @include h4;
             }
 
             .imgs-painels {
@@ -30,10 +27,8 @@
             }
 
             h5 {
-                color: $secondary-color;
+                @include text-color-size($secondary-color, 1.5rem);
                 padding: 2.75rem 0 1.5rem 1.5rem;
-                font-size: 1.5rem;
-                font-weight: $fw-regular;
             }
 
             .ambiental {

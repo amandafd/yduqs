@@ -11,10 +11,9 @@
             border-collapse: collapse;
 
             thead {
+                @include text-color-size($light-color, 1.18rem);
                 background-color: $primary-color;
-                color: $light-color;
                 font-weight: $fw-bold;
-                font-size: 1.18rem;
                 height: 2rem;
     
                 th {

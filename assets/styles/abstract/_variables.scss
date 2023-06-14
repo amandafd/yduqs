@@ -14,7 +14,8 @@ $fw-bold: 700;
 $fw-regular: 400;
 $fw-light: 300;
 
-//DISPLAY FLEX
+//DISPLAY 
+    //FLEX
 
 @mixin flex-column {
     display: flex;
@@ -64,9 +65,21 @@ $fw-light: 300;
     align-items: $align-i;
 }
 
-//DISPLAY GRID
+    //GRID
 
 @mixin grid-template-columns($t-column){
     display: grid;
     grid-template-columns: $t-column;
+}
+
+//TEXTO
+@mixin text-color-size($color, $fs) {
+    color: $color;
+    font-size: $fs;
+}
+
+@mixin h4 {
+    @include text-color-size($secondary-color, 1.625rem);
+    font-weight: $fw-bold;
+    padding: 0 0 2rem 1.53rem;
 }
