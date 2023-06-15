@@ -4,24 +4,25 @@
     @include flex-column-justify(center);
 
     .tabela {
-        overflow-x: scroll;
         width: 100%;
+        overflow-x: scroll;
 
         table {
             border-collapse: collapse;
 
             thead {
                 @include text-color-size-weight($light-color, 1.18rem, $fw-bold);
+
                 background-color: $primary-color;
                 height: 2rem;
-    
+                
                 th {
-                    border: none;
                     padding: 0 0.5rem;
+                    border: none;                   
 
                     &:first-child {
-                        padding-right: 1rem;
                         text-align: left;
+                        padding-right: 1rem;  
                     }
 
                     &:not(:first-child) {
@@ -33,7 +34,7 @@
             tbody {
                 td {
                     padding: 1rem 0;
-                    border-bottom: 1px solid $gray-6;
+                    border-bottom: 1px solid $gray-2;
                 }
             }
 
@@ -45,7 +46,6 @@
                 }
 
                 &:not(:first-child) {
-                    padding: 0 2rem;
                     text-align: center;
                 }
             }
@@ -64,10 +64,7 @@
         }
     }
 
-}
-
-@media (min-width: 620px) {
-    .central-section {
+    @media (min-width: 620px) {
         @include flex-align-i(center);
     }
 }

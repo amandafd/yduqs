@@ -1,31 +1,33 @@
 @import "../abstract/variables";
 
-.apresentacoes-lista {
-    .lista {
-        margin-bottom: 2.5rem;
-
-        .date {
-            color: $gray;
-        }
+.apresentacoes-section{
+    .apresentacoes-lista {
+        .lista {
+            margin-bottom: 2.5rem;
     
-        .item {
-            @include flex-justify(space-between);
-    
-            p {
-                color: $gray-2;
-                padding-right: 2rem;
+            .date {
+                color: $gray-5;
+            }
+        
+            .item {
+                @include flex-justify(space-between);
+        
+                p {
+                    color: $gray-7;
+                    padding-right: 2rem;        
+                    
+                }
+            }
+        
+            hr {
+                @include border($gray-3);
+                
+                margin: 1rem 0;
             }
         }
-    
-        hr {
-            border: 1px solid $gray-3;
-            margin: 1rem 0;
-        }
     }
-}
-
-@media (min-width: 620px) {
-    .apresentacoes-section {
+    
+    @media (min-width: 620px) {
         @include flex-column-align-i(center);
     }
 }

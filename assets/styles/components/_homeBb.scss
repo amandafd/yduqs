@@ -2,12 +2,14 @@
 
 .home-bb {
   background-color: $primary-color;
+  
   img {
     max-width: 100%;
   }
 
   .home-banner {
     @include flex-column-justify(space-between);
+
     background: url(./../images/banner-vr.png) top no-repeat;
     background-size: cover;
     height: 27.75rem;
@@ -19,8 +21,9 @@
 
       .box-info {
         @include flex-column-justify-align-i(space-between, center);
-        height: 12.875rem;
+
         text-align: center;
+        height: 12.875rem;
         text-shadow: 1rem 1rem 1rem $primary-color;
 
         h2 {
@@ -34,10 +37,11 @@
 
         button {
           @include text-color-size-weight($light-color, 1.25rem, $fw-bold);
+          @include border($light-color);
+    
           background-color: transparent;
           padding: 0.5rem 1rem;
-          border: 1px solid $light-color;
-          border-radius: 0.125rem;
+          border-radius: 0.125rem;  
         }
       }
     }
@@ -62,17 +66,20 @@
 
   .atalhos {
     @include grid-template-columns(1fr 0fr);
-    gap: 1.5rem;
-    padding: 5rem 1rem;
+
     justify-items: center;
+    padding: 5rem 1rem;
+    gap: 1.5rem;
 
     div {
-      background-color: $secondary-color;
+      
       @include flex-column-justify-align-i(center, center);
       @include size-w-h(10.75rem, 8rem);
+
+      background-color: $secondary-color;
       text-align: center;
-      gap: 0.75rem;
       border-radius: 0.25rem;
+      gap: 0.75rem; 
 
       img {
         max-width: 3.75rem;
@@ -89,6 +96,7 @@
   .home-bb {
     .atalhos {
       @include flex-column-align-i(center);
+
       padding: inherit;
       padding: 5rem 0;
     }
@@ -97,23 +105,6 @@
 
 @media (min-width: 620px) {
   .home-bb {
-      /*.visual-components {
-        .bullet-select {
-          @include flex-column-align(center);
-          flex-wrap: wrap;
-          gap: 0.9rem;
-          top: -179%;
-          left: 89%;
-        }
-
-        .arrows {
-          display: inline-flex;
-          justify-content: space-between;
-          width: 4rem;
-        }
-      }*/
-    /*}*/
-
     .atalhos {
       grid-template-columns: 1fr 1fr 1fr;
     }
@@ -124,7 +115,9 @@
   .home-bb {
     .atalhos {
       @include flex-justify(space-between);
+      
       padding: 5rem 3rem;
+      
       div {
         width: 9.5rem;
       }

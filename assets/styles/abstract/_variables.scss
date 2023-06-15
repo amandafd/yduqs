@@ -1,13 +1,13 @@
 $primary-color: #12284C;
 $secondary-color: #00ADBB;
-$gray: #808080;
-$gray-2: #262626;
+$light-color: #fff;
+$gray: #F7F7F7; 
+$gray-2: #E5E1E6;
 $gray-3: #e6e6e6;
 $gray-4: #999;
-$gray-5: #666;
-$gray-6: #E5E1E6;
-$gray-7: #f7f7f7;
-$light-color: #fff;
+$gray-5: #808080;
+$gray-6: #666;
+$gray-7: #262626;
 
 $font: 'Inter', sans-serif;
 $fw-bold: 700;
@@ -23,7 +23,7 @@ $fw-light: 300;
 }
 
 @mixin flex-column-justify($justify) {
-    @include flex-column;
+    
     justify-content: $justify;
 }
 
@@ -92,4 +92,9 @@ $fw-light: 300;
 @mixin size-w-h($w, $h) {
     width: $w;
     height: $h;
+}
+
+//BORDER
+@mixin border($color) {
+    border: 1px solid $color;
 }

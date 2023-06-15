@@ -2,9 +2,10 @@
 
 footer {
     @include flex-column-justify-align-i(space-between, center);
+    
     background-color: $primary-color;
-    padding: 1rem;
     min-height: 9.5rem;
+    padding: 1rem; 
 
     .copyright {
         @include text-color-size-weight($secondary-color, 0.875rem, $fw-bold);
@@ -22,6 +23,7 @@ footer {
 
     div {
         @include flex-justify-align-i(space-between, center);
+        
         text-align: center;
         min-width: 11rem;
     }
@@ -32,8 +34,9 @@ footer {
 
     @media(min-width: 620px) {
         @include grid-template-columns(auto auto);
+        
         text-align: center;
-        justify-content: space-around;
+        justify-content: space-around;  
     }
 
     @media (min-width: 950px) {

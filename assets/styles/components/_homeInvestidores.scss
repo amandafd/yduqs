@@ -14,6 +14,7 @@
 
       .t21 {
          @include flex-align-i(center);
+
          padding: 1.5rem 0 2.5rem 0;
 
          h5 {
@@ -23,12 +24,14 @@
 
       .resultados {
          @include grid-template-columns(repeat(2, 1fr));
+
          gap: 1rem;
 
          div {
             @include flex-column-align-i(center);
-            text-align: center;
-            width: 10.8rem;
+
+            text-align: center; 
+            width: 10.8rem; 
 
             img {
                width: 3.2rem;
@@ -54,11 +57,11 @@
       padding-top: 2.5rem;
 
       .texto {
-         color: $gray-2;
+         color: $gray-7;
       }
 
       .hora {
-         @include text-color-size($gray, 0.875rem);
+         @include text-color-size($gray-5, 0.875rem); //
       }
 
       .evento {
@@ -70,13 +73,12 @@
       }
 
       hr {
-         border: 1px solid $gray-3;
+         @include border($gray-3);
       }
    }
-}
 
-@media (min-width: 280px) and (max-width: 396px) {
-   .home-investidores {
+
+   @media (min-width: 280px) and (max-width: 396px) {
       padding: 1.5rem;
 
       .central  {
@@ -85,30 +87,25 @@
          }
       }
    }
-}
 
-@media (min-width: 620px) {
-   .home-investidores {
+
+   @media (min-width: 620px) {
       .central {
          .resultados {
             grid-template-columns: repeat(3, 1fr);
          }
       }
    }
-}
 
-@media (min-width: 740px) {
-   .home-investidores {
+   @media (min-width: 740px) {
       .central {
          .resultados {
             gap: 4rem;
          }
       }
    }
-}
 
-@media(min-width: 950px) {
-   .home-investidores{
+   @media(min-width: 950px) {
       @include grid-template-columns( 1fr 1fr);
       padding: 0 1rem;
       gap: 2rem;

@@ -1,10 +1,11 @@
 @import "../abstract/variables";
 
 @mixin div-institucional($url-da-imagem) {
+    @include flex-column-justify(space-between);
+
     background: linear-gradient(0deg, rgba(18, 40, 76, 0.3), rgba(18, 40, 76, 0.3)), url($url-da-imagem) no-repeat top;
     background-size: cover;
     min-width: 21.8rem;
-    @include flex-column-justify(space-between);
     padding: 4rem 0rem 2.375rem 2rem;
 
     h5 {
@@ -21,8 +22,9 @@
 
     .cards {
         @include flex-justify(space-between);
-        overflow-x: scroll;
+
         height: 28.125rem;
+        overflow-x: scroll;
 
         .quem-somos {
             @include div-institucional("./../images/quem-somos.png");
@@ -43,6 +45,7 @@
  
     .visual-components {
         @include flex-justify-align-i(center, center);
+
         padding: 1rem;
 
         .arrow {

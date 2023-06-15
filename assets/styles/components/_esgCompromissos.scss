@@ -6,28 +6,31 @@
     .esg-div {
         .compromissos {
             background-color: $primary-color;
-            padding: 4rem 0;
+            padding: 4rem 0;            
 
             h4 {
                 @include h4;
             }
 
             .imgs-painels {
-                width: 95%;
                 position: relative;
+                width: 95%;
                 overflow-x: hidden;
 
                 hr {
+                    @include border($secondary-color);
+                    
                     position: absolute;
-                    width: 100%;
                     bottom: 3px;
+                    width: 100%;            
                     margin: 0 1rem;
-                    border: 1px solid $secondary-color;
+                    
                 }
             }
 
             h5 {
                 @include text-color-size($secondary-color, 1.5rem);
+                
                 padding: 2.75rem 0 1.5rem 1.5rem;
             }
 
@@ -49,17 +52,20 @@
 
             .div-img-hr {
                 @include flex-column-padding(0 1rem);
+
                 hr {
-                    width: 100%;
+                    @include border($secondary-color);
+
                     bottom: 3px;
-                    border: 1px solid $secondary-color;
+                    width: 100%;
                 }
             }
 
-            .text-block {
-                color: $light-color;
+            .text-block { 
                 @include flex-column-padding(0 1.53rem);
+
                 gap: 1.5rem;
+                color: $light-color;
             }
         }
     }

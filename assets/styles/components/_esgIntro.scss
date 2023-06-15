@@ -8,16 +8,19 @@
     .esg-div {
         .intro {
             @include flex-column-gap(4rem); 
+
             padding: 0 1rem 4.5rem 01rem;
 
             .intro-text {
                 @include flex-column-gap(1.5rem);
-                color: $gray-2;
+
+                color: $gray-7;
                 line-height: 1.5rem;
             }
 
             .intro-milhoes {
                 @include flex-column-align-i(center);
+
                 text-align: center;
                 gap: 1.5rem;
 
@@ -25,12 +28,13 @@
                     p {
                         &:first-child {
                             @include text-color-size-weight($primary-color, 1.8175rem, $fw-bold);
+                            
                             span {
                                 @include text-color-size($secondary-color, 3.5rem);
                             }
                         }
                         &:not(:first-child) {
-                            color: $gray-2;
+                            color: $gray-7;
                         }
                     }
                 }

@@ -8,16 +8,17 @@
   @include flex-justify-align-i(center, flex-start);
 
   img {
-    width: 92%;
-    z-index: 2;
+    width: 92%; 
     border-radius: 0.25rem 0 0 0.25rem;
+    z-index: 2;
   }
 }
 
 .banner::before {
-  content: "";
-  background-color: $primary-color;
   @include size-w-h(100%, 70%);
+
+  background-color: $primary-color;
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
