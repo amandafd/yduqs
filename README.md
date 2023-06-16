@@ -59,7 +59,6 @@
 </ul> 
 
 <ul>Melhorias futuras a serem implementadas:
-  <li>Refatoração do código, otimizando ainda mais o uso de funções de variaveis para diminuir a quantidade de linhas em folhas de estilo e facilitar a manutenção;</li>
   <li>Melhorar componentes visuais para se adequar a proposta(banners, imagens, etc ainda precisam de melhoria);</li>
   <li>Adicionar scroll automatico para carrosel de componentes;</li>
   <li>Desenvolver menu retratil;</li>
