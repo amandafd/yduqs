@@ -30,4 +30,10 @@
     @media (min-width: 620px) {
         @include flex-column-align-i(center);
     }
+
+    .apresentacoes-div {
+        @media (min-width: 950px) {
+            width: 52rem;
+        }
+    }
 }

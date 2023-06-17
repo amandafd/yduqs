@@ -23,7 +23,7 @@ $fw-light: 300;
 }
 
 @mixin flex-column-justify($justify) {
-    
+    @include flex-column;
     justify-content: $justify;
 }
 

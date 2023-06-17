@@ -67,4 +67,17 @@
     @media (min-width: 620px) {
         @include flex-align-i(center);
     }
+
+    @media (min-width: 950px) {
+        thead {
+            th {
+                &:first-child {
+                    width: 14rem;
+                }
+                &:not(:first-child) {
+                    width: 7rem;
+                }
+            }
+        }    
+    }
 }

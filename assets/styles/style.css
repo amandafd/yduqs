@@ -196,6 +196,8 @@ footer .separador {
   max-width: 100%;
 }
 .home-bb .home-banner {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   background: url(./../images/banner-vr.png) top no-repeat;
   background-size: cover;
@@ -203,6 +205,8 @@ footer .separador {
   padding: 5.5rem 0 0 1rem;
 }
 .home-bb .home-banner .home-banner-2 {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
@@ -305,6 +309,8 @@ footer .separador {
   overflow-x: scroll;
 }
 .home-institucional .cards .quem-somos {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   background: linear-gradient(0deg, rgba(18, 40, 76, 0.3), rgba(18, 40, 76, 0.3)), url("./../images/quem-somos.png") no-repeat top;
   background-size: cover;
@@ -318,6 +324,8 @@ footer .separador {
   max-width: 4rem;
 }
 .home-institucional .cards .unidades {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   background: linear-gradient(0deg, rgba(18, 40, 76, 0.3), rgba(18, 40, 76, 0.3)), url("./../images/banner-vr.png") no-repeat top;
   background-size: cover;
@@ -331,6 +339,8 @@ footer .separador {
   max-width: 4rem;
 }
 .home-institucional .cards .estrategia {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   background: linear-gradient(0deg, rgba(18, 40, 76, 0.3), rgba(18, 40, 76, 0.3)), url("./../images/estrategia.png") no-repeat top;
   background-size: cover;
@@ -344,6 +354,8 @@ footer .separador {
   max-width: 4rem;
 }
 .home-institucional .cards .impacto {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   background: linear-gradient(0deg, rgba(18, 40, 76, 0.3), rgba(18, 40, 76, 0.3)), url("./../images/impacto.png") no-repeat top;
   background-size: cover;
@@ -471,6 +483,8 @@ footer .separador {
 }
 
 .central-section {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 .central-section .tabela {
@@ -525,6 +539,14 @@ footer .separador {
     align-items: center;
   }
 }
+@media (min-width: 950px) {
+  .central-section thead th:first-child {
+    width: 14rem;
+  }
+  .central-section thead th:not(:first-child) {
+    width: 7rem;
+  }
+}
 
 .apresentacoes-section .apresentacoes-lista .lista {
   margin-bottom: 2.5rem;
@@ -549,6 +571,11 @@ footer .separador {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (min-width: 950px) {
+  .apresentacoes-section .apresentacoes-div {
+    width: 52rem;
   }
 }
 
@@ -689,6 +716,8 @@ section .filtrar select {
 }
 
 .compartilhar {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   height: 8.5rem;
   padding: 0 1rem;
@@ -720,4 +749,10 @@ section .filtrar select {
 .botoes-numerados button:not(:first-child) {
   background-color: #F7F7F7;
   color: #808080;
+}
+
+@media (min-width: 740px) {
+  .compartilhar {
+    padding: 0 9%;
+  }
 }/*# sourceMappingURL=style.css.map */
