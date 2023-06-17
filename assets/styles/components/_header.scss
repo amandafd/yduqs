@@ -112,7 +112,13 @@ header {
         @include flex-justify-align-i(space-between, center);
         
         min-width: 12rem;
+        padding-right: 1rem;
         color: $light-color;
+        gap: 1rem;
+
+        p {
+          font-weight: $fw-regular;
+        }
       }
     }
   }
